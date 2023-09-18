@@ -1,0 +1,41 @@
+----------------------------
+Command: init
+Project initialized
+----------------------------
+Create file 'file1.txt' with content 'aaa'
+----------------------------
+Command: add file1.txt
+Add completed successful
+----------------------------
+Command: commit file1.txt
+Files committed
+----------------------------
+Command: branch-create develop
+Branch develop created successfully
+You can checkout it with 'checkout develop'
+----------------------------
+Create file 'file2.txt' with content 'bbb'
+----------------------------
+Command: add file2.txt
+Add completed successful
+----------------------------
+Command: commit file2.txt
+Files committed
+----------------------------
+Command: status
+Current branch is 'develop'
+Everything up to date
+----------------------------
+Command: checkout master
+Checkout completed successful
+----------------------------
+Command: status
+Current branch is 'master'
+Everything up to date
+----------------------------
+Command: branch-remove develop
+Branch develop removed successfully
+----------------------------
+Command: show-branches
+Available branches:
+master

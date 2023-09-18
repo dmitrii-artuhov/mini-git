@@ -1,0 +1,54 @@
+----------------------------
+Command: init
+Project initialized
+----------------------------
+Create file 'file.txt' with content 'aaa'
+----------------------------
+Command: add file.txt
+Add completed successful
+----------------------------
+Command: commit Add file.txt
+Files committed
+----------------------------
+Delete file file.txt
+----------------------------
+Command: status
+Current branch is 'master'
+Untracked files:
+
+Removed files:
+    file.txt
+
+----------------------------
+Command: checkout -- file.txt
+Checkout completed successful
+----------------------------
+Command: content of file file.txt
+aaa
+----------------------------
+Command: status
+Current branch is 'master'
+Everything up to date
+----------------------------
+Create file 'file.txt' with content 'bbb'
+----------------------------
+Command: content of file file.txt
+bbb
+----------------------------
+Command: status
+Current branch is 'master'
+Untracked files:
+
+Modified files:
+    file.txt
+
+----------------------------
+Command: checkout -- file.txt
+Checkout completed successful
+----------------------------
+Command: content of file file.txt
+aaa
+----------------------------
+Command: status
+Current branch is 'master'
+Everything up to date

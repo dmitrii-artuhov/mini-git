@@ -1,0 +1,79 @@
+----------------------------
+Command: init
+Project initialized
+----------------------------
+Create file 'file1.txt' with content 'aaa'
+----------------------------
+Create file 'file2.txt' with content 'bbb'
+----------------------------
+Command: status
+Current branch is 'master'
+Untracked files:
+
+New files:
+    file1.txt
+    file2.txt
+
+----------------------------
+Command: add file1.txt
+Add completed successful
+----------------------------
+Command: add file2.txt
+Add completed successful
+----------------------------
+Command: status
+Current branch is 'master'
+Ready to commit:
+
+New files:
+    file1.txt
+    file2.txt
+
+----------------------------
+Command: rm file2.txt
+Rm completed successful
+----------------------------
+Command: status
+Current branch is 'master'
+Ready to commit:
+
+New files:
+    file1.txt
+
+Untracked files:
+
+New files:
+    file2.txt
+
+----------------------------
+Command: commit Add file1.txt
+Files committed
+----------------------------
+Command: add file2.txt
+Add completed successful
+----------------------------
+Command: commit Add file2.txt
+Files committed
+----------------------------
+Command: status
+Current branch is 'master'
+Everything up to date
+----------------------------
+Command: log
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Add file2.txt
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Add file1.txt
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Initial commit

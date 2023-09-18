@@ -1,0 +1,84 @@
+----------------------------
+Command: init
+Project initialized
+----------------------------
+Create file 'file.txt' with content 'aaa'
+----------------------------
+Command: add file.txt
+Add completed successful
+----------------------------
+Command: commit First commit
+Files committed
+----------------------------
+Create file 'file.txt' with content 'bbb'
+----------------------------
+Command: add file.txt
+Add completed successful
+----------------------------
+Command: commit Second commit
+Files committed
+----------------------------
+Command: log
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Second commit
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+First commit
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Initial commit
+----------------------------
+Command: reset HEAD~1
+Reset successful
+----------------------------
+Command: content of file file.txt
+aaa
+----------------------------
+Command: log
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+First commit
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Initial commit
+----------------------------
+Create file 'file.txt' with content 'ccc'
+----------------------------
+Command: add file.txt
+Add completed successful
+----------------------------
+Command: commit Third commit
+Files committed
+----------------------------
+Command: log
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Third commit
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+First commit
+
+Commit COMMIT_HASH
+Author: Test user
+Date: COMMIT_DATE
+
+Initial commit
