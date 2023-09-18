@@ -20,3 +20,16 @@ This is a toy git replica that is build according to the actual git specificatio
 * `branch-create <branch>` - create a branch named `<branch>`
 * `branch-remove <branch>` - remove branch `<branch>`
 * `show-branches` - show all available branches
+
+
+## Implementation insights
+
+The mini-git repository is stored as a tree data structure. There is a couple of file types that I used (git also uses them) that are related to this tree abstraction and to the mini-git implementation in general:
+- `BlobFile`: these are actual files that are added to the repository.
+- `TreeFile`: in order to reuse some files from previous commits we add edges to the our tree abstraction. The edges are represented by this file type.
+- `CommitFile`: this is the commit file, it stores the hash of the root `TreeFile`. By traversing the tree starting at this root node we are able to extract all files that are related to the particular commit.
+- There are some other files like `IndexFile`, `HeadFile`, and `BranchFile`: the last two store the current commit hash and current branch, respectively. Index file allows to stage new and updated files and compare them to those that are already commited.
+
+You can get more insights from these articles:
+- https://habr.com/ru/articles/313890/ (this one in russian, but you can translate the webpage)
+- https://git-scm.com/book/en/v2 (chapter 10, "Git Internals")
